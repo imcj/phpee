@@ -1,5 +1,12 @@
 # phpee
 
+### Domain Payload Object
+
+DPO和DTO不同，DPO持有聚合的引用，这种对象设计更适合单进程环境下，分布式环境中是不能引用聚合的。
+
+- [Vaughn Vernon] implement domain driven design
+- [Vernon DPO]
+
 ### Separated interface 隔离接口
 
 接口定义和要和实现隔离开，定义放在和实现不同的包内。
