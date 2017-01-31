@@ -8,6 +8,8 @@
 - 包含很难创建和复现的状态（例如网络错误）
 - 很慢（例如在测试前初始化一个完整的数据库）
 
+- [Wikipedia: Mock object](https://en.wikipedia.org/wiki/Mock_object)
+
 ### Domain Payload Object
 
 DPO和DTO不同，DPO持有聚合的引用，这种对象设计更适合单进程环境下，分布式环境中是不能引用聚合的。
