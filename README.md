@@ -1,5 +1,21 @@
 # phpee
 
+### Domain model
+
+领域模型是包含行为和数据的对象模型。[Martin folwer: Domain Model](https://martinfowler.com/eaaCatalog/domainModel.html)
+
+领域模型由一系列网状的聚合对象组成。聚合对象由实体和值对象组成。
+
+### Aggregate
+
+聚合和组合很难区分，使用对象属于聚合。
+
+[Martin folwer: DDD_Aggregate](https://martinfowler.com/bliki/DDD_Aggregate.html)
+
+### Composition
+
+
+
 ### Mock object
 
 在编写单元测试用例的时候，Mock object可以模拟真实对象的复杂行为。
