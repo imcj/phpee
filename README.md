@@ -14,6 +14,15 @@
 
 ### Composition
 
+### Repository
+
+Repository 与 DAO 的区别是，Repository 保存和重建 Aggreation 对象，DAO 保存和重建表对象。
+
+Repository 使用数据映射器持久化对象，在P of EE中详细说明了数据映射起如何工作。但是，在今天我们已经不需要在进行复杂的手动创建数据映射器。使用Hibernate这样的ORM工具帮助我们定义低侵入性的POJO对象，PHP环境和Hibernate类似的ORM选择是doctrine2。
+
+### Data Access Object (DAO)
+
+Java中的设计模式，DAO对象和JDBC交互为客户调用提供数据访问的接口。
 
 
 ### Mock object
