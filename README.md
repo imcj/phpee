@@ -1,5 +1,11 @@
 # phpee
 
+## 分层
+
+传统的应用程序架构分层是MVC，martin 在p of ee 中提到分为表现层、表现层（应用控制器）、领域层、数据源层（数据映射器）、数据源层。表现层对应View，应用控制器对应Controller，数据源层（数据映射器）和数据源层相对Model层就复杂非常多。在Eric Evans的ddd中，应用控制器还分DTO DTO Asselmber和Facade以及Controller等等，更加精细。
+
+[Eric Evans: Domain driven design]
+
 ### Domain model
 
 领域模型是包含行为和数据的对象模型。[Martin folwer: Domain Model](https://martinfowler.com/eaaCatalog/domainModel.html)
