@@ -20,6 +20,10 @@
 
 ### Composition
 
+### Application Service Facade
+
+### Domain Service
+
 ### Repository
 
 Repository 与 DAO 的区别是，Repository 保存和重建 Aggreation 对象，DAO 保存和重建表对象。
@@ -37,6 +41,22 @@ Factory模式已经成为软件设计过程中的标配，Eric Evans在DDD中定
 
 Java中的设计模式，DAO对象和JDBC交互为客户调用提供数据访问的接口。
 
+- [Wikipedia: Mock object](https://en.wikipedia.org/wiki/Mock_object)
+
+### Data Transfer Object (DTO)
+
+### Asemmbler
+
+### Validator
+
+### Domain Payload Object
+
+DPO和DTO不同，DPO持有聚合的引用，这种对象设计更适合单进程环境下，分布式环境中是不能引用聚合的。
+
+- [Vaughn Vernon] implement domain driven design
+- [Vernon DPO]
+
+### UnitTest
 
 ### Mock object
 
@@ -45,15 +65,6 @@ Java中的设计模式，DAO对象和JDBC交互为客户调用提供数据访问
 - 不确定的结果（例如当前时间和当前温度）
 - 包含很难创建和复现的状态（例如网络错误）
 - 很慢（例如在测试前初始化一个完整的数据库）
-
-- [Wikipedia: Mock object](https://en.wikipedia.org/wiki/Mock_object)
-
-### Domain Payload Object
-
-DPO和DTO不同，DPO持有聚合的引用，这种对象设计更适合单进程环境下，分布式环境中是不能引用聚合的。
-
-- [Vaughn Vernon] implement domain driven design
-- [Vernon DPO]
 
 ### Separated interface 隔离接口
 
