@@ -20,7 +20,13 @@
 
 ### Composition
 
-### Application Service Facade
+### Application layer service
+
+应用程序Service沟通应用控制器和领域层，两层相互交互。防止相互泄漏，Controller并不知道Domain Service的具体逻辑，通过Application Service交互。Domain Service也不知道Controller的存在，只和Application Service交互。
+
+应用程序层服务eric的类名规则是 BookingServiceFacade，用Facade关键词说明是Facade模式。所以Application Service不能包含任何领域逻辑，而是转交给Domain layer service。
+
+[实战应用程序Service](application_layer_service.md)
 
 ### Domain Service
 
