@@ -30,6 +30,8 @@
 
 ### Domain Service
 
+领域层服务对象使用和Repository交互，一个领域对象可能有很多聚合根组成，而一个聚合根会有一个Repostory，Domain Service协调这些Repository。
+
 ### Repository
 
 Repository 与 DAO 的区别是，Repository 保存和重建 Aggreation 对象，DAO 保存和重建表对象。
